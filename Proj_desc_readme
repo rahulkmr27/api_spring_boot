@@ -1,0 +1,20 @@
+
+Pharamcy Locator:
+
+Description:
+
+A simple spring boot application fo retrieve the pharmacy details based on the user location (i.e. latitude & longitude) using REST webservices. This applications reads the list of pharmacies from the .csv file in the resources. It has three  API calls 
+i) allPharmacies -- returns list of all available pharmacies -- no input parameters required.
+ii) retrievePharmacy -- returns the near by pharmacy -- user latitude and longitude are required.
+iii) retrieveNearByPharmacies -- returns a list of near by pharamcies sorted according to the distance from the user --- user latitude and longitude are required.
+
+Running the project
+Download the project from git repo.
+Run the application using any IDE of your choice which supports spring boot apps (ex STS, Eclipse with STS plugin ..)
+Loop back to postman and try hitting the URLS for the services
+
+Note: One thing you might need to take in consideration is when entering the longitude make sure you add '-' prior to the value.
+
+Next Steps:
+
+ Planing on creating a UI which asks for user location (latitude/longitude), ZipCode and/or City and returning the search results accordingly. 
